@@ -1,0 +1,109 @@
+.category{
+	margin:70px 5%;
+	background: #F1F1F1;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.Headphones, .Speaker, .Earphone{
+	margin-top: -50px;
+}
+.Headphones{
+	width: 121.9px;
+	height: 144px;
+	object-fit: cover;
+}
+.Speaker{
+	width: 121.9px;
+	height: 144px;
+	object-fit: cover;
+}
+.Earphone{
+	width: 121.9px;
+	height: 144px;
+	object-fit: cover;
+}
+.categoryHeader{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 1.07143px;
+	text-transform: uppercase;
+	color: #000000;
+}
+.button{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 18px;
+	/* identical to box height */
+
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	color: #000000;
+
+	mix-blend-mode: normal;
+	opacity: 0.5;
+	border: none;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button svg{
+	margin-left: 15px;
+
+}
+@media only screen and (min-width: 768px) {
+	.categoryWrapper{
+		display: flex; 
+		justify-content: center;
+		gap: 15px;
+		margin-bottom: 0;
+	}
+	.categoryWrapper > div{
+		width: 30%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+}
+@media only screen and (min-width: 1440px) {
+	.categoryWrapper{
+		display: flex; 
+		justify-content: center;
+		gap: 30px;
+		margin-bottom: 0;
+	}
+	.Headphones, .Speaker, .Earphone{
+		margin-top: -50px;
+	}
+	.categoryWrapper > div{
+		width: 25%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.Headphones{
+	width: 151.9px;
+	height: 174px;
+	object-fit: cover;
+}
+.Speaker{
+	width: 151.9px;
+	height: 174px;
+	object-fit: cover;
+}
+.Earphone{
+	width: 151.9px;
+	height: 174px;
+	object-fit: cover;
+}
+}

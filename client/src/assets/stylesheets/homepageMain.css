@@ -1,0 +1,212 @@
+main{
+ position: relative;
+ width: 100vw;
+ background-color: var(--bg);
+ height:500px;
+ overflow: hidden;
+}
+.main-wrapper{
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	z-index: 1;
+}
+main::after{
+	content: "";
+	position: absolute;
+	background-image: url('../../assets/media/home/mobile/image-header1.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left 50% top 50%;
+	height: 100%;
+	width: 100%;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+.new-product{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	gap: 30px;
+}
+
+.new-product-header {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 90px;
+}
+
+.new-product-name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+}
+
+.view-product {
+    padding: 6px;
+    background: #D87D4A;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 3px;
+    width: 168px ;
+    height: 48px;
+
+}
+
+.new-product-messagee {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    width: 328px;
+    text-align: center;
+    opacity: 0.5;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.75;
+
+
+}
+
+/**************************/
+/******* media query*******/
+/***************************/
+@media only screen and (min-width: 768px) {
+	main{
+		height: 700px;
+
+	}
+	main::after{
+	content: "";
+	position: absolute;
+	background-image: url('../../assets/media/home/tablet/image-header1.jpg');
+	background-size: contain;
+	background-position: center;
+}
+.new-product{
+	gap: 60px;
+}
+.new-product-name{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 58px;
+	/* or 104% */
+
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+}
+.new-product-header{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+.new-product-messagee{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	/* or 167% */
+
+	text-align: center;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+	opacity: 0.75;
+}
+.view-product{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 18px;
+	/* identical to box height */
+
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+	main{
+		position: unset;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		box-sizing: border-box;
+		padding:0 9%;
+
+	}
+	.main-wrapper{
+		position: unset;
+		align-self: center;		
+		justify-content: flex-start;
+	}
+	.new-product-header{
+		margin: 0;
+	}
+	main::after{
+		position: unset;
+		background-image: url('../../assets/media/home/desktop/image-hero1.jpg');
+		justify-self: flex-end;
+	}
+	.new-product{
+		align-items: flex-start;
+		padding: 0;
+		margin: 0;
+	}
+	.new-product-name,.new-product-messagee{
+		text-align: left;
+	}
+}

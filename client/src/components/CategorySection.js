@@ -24,7 +24,7 @@ function CategorySection() {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-      axios('http://localhost:8081/api/vi/category')
+      axios('https://audio-ph.onrender.com/api/vi/category')
       .then((res)=>{
         setCategories(res.data.data);
         })

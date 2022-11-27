@@ -2,7 +2,7 @@ import {validateEmail} from  '../utils/email.validator'
 import * as Yup from 'yup'
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 export const initialValues= {
-    name:'mx',
+    name:'',
     email:'',
     phone_number:'',
     address:'',
@@ -14,8 +14,9 @@ export const initialValues= {
     payment_method:'e-money'
 
   };
- export const onSubmit= (values) =>{
+ export const onSubmit= (values,thankYouHandler) =>{
     console.log(values)
+    thankYouHandler()
   };
 
   export const validationSchema =Yup.object({

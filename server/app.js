@@ -6,7 +6,7 @@ const cors = require("cors")
 const app = express();
 
 let corsOptins = {
-	origin:"http://localhost:3000"
+	origin:"https://audiophile6.netlify.app/"
 }
 
 // Useful for logging the requests reaching to this server

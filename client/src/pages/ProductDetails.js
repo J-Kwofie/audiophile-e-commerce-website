@@ -21,7 +21,7 @@ function ProductDetails() {
 
   const f = useRef(1)
   useEffect(()=>{
-    axios.get(`http://localhost:8081/api/vi/product/${category}/${product_id}`)
+    axios.get(`https://audio-ph.onrender.com/api/vi/product/${category}/${product_id}`)
     .then((res)=>{setProductDetails(res.data); console.log( res.data)})
     .catch((err)=>console.log(err))
     setNumberOfProductAddedToCart(1)
@@ -66,7 +66,7 @@ function ProductDetails() {
      <BackButton />
       <div className='product-details'>
         <section>
-        {productDetails[0].new === true &&  <h4>new product</h4>}
+        {productDetails[0].new === true &&  <h4 className='new'>new product</h4>}
           <h1>{productDetails[0].name}</h1>
           <p>{productDetails[0].description}</p>
           <strong>{`$  ${productDetails[0].price}`}</strong>

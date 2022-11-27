@@ -1,8 +1,16 @@
 import React from 'react'
 import { CheckoutFormStyled } from './CheckoutFormStyled'
 import {useFormik} from 'formik'
-import {initialValues,onSubmit,validationSchema} from '../utils/formik.methods.objects'
-function CheckoutForm() {
+import {initialValues,validationSchema} from '../utils/formik.methods.objects'
+function CheckoutForm({thankYouHandler}) {
+  const g = ()=>{
+    thankYouHandler()
+  }
+   const onSubmit= (values,f) =>{
+    console.log(values)
+    g();
+    console.log(formik.isValid,formik.isSubmitting)
+  };
   const formik = useFormik({
     initialValues,
     onSubmit,

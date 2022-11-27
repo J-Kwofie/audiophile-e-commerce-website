@@ -81,13 +81,16 @@ footer #section1 section {
    mix-blend-mode: normal;
    opacity: 0.5;
  }
+ 
  @media (min-width: 776px) {
    width: 90%;
    padding-left: 5%;
- padding-right: 5%;
-   .cart-summary{
+   padding-right: 5%;
+
+ .cart-summary{
       width: 90%;
    }
+   
  }
 
  @media (min-width: 1144px) {

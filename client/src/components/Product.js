@@ -14,7 +14,7 @@ function ProductDetails() {
   const [productDetails, setProductDetails] = useState([])
   const [numberOfProductAddedToCart, setNumberOfProductAddedToCart] = useState(1)
   useEffect(()=>{
-    axios.get(`http://localhost:8081/api/vi/product/${category}/${product_id}`)
+    axios.get(`https://audio-ph.onrender.com/api/vi/product/${category}/${product_id}`)
     .then((res)=>{setProductDetails(res.data); console.log( res.data)})
     .catch((err)=>console.log(err))
   },[category,product_id])

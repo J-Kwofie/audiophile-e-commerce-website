@@ -155,6 +155,20 @@ export const ProductStyled = styled.section`
    .category section .category-wrapper{
     margin-bottom:60px;
    }
+   h3.backbutton:hover{
+     color: #D87D4A;
+     opacity: 1;
+    }
+    h4.new{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #D87D4A;
+
+    }
     @media (min-width:400px){
         align-items:center;  
 
@@ -190,16 +204,7 @@ export const ProductStyled = styled.section`
         justify-content:space-between;
         width:90%;
     }
-    h4{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-        color: #D87D4A;
-
-    }
+    
     .product-details section{
         width:auto;
         align-items: flex-start;

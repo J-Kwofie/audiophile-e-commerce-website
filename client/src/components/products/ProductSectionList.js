@@ -6,7 +6,7 @@ function ProductSectionList({categoryName}) {
   const [productsInACategory, setProductsInACategory] = useState([])
 
   useEffect(()=>{
-    axios.get(`http://localhost:8081/api/vi/product/${categoryName}`)
+    axios.get(`https://audio-ph.onrender.com/api/vi/product/${categoryName}`)
     .then((res)=>{setProductsInACategory(res.data); console.log(res.data)})
     .catch((err)=>console.log(err))
   },[categoryName])
